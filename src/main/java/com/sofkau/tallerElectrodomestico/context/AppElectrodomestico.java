@@ -23,8 +23,10 @@ public class AppElectrodomestico {
         System.out.println("\n======= REPORTE =======\n");
         for (Electrodomestico electrodomestico : lista)
             System.out.println("\n"+ electrodomestico.showReport() +"\n");
-        System.out.println("\nPrecio total de todos los productos: "+ getPrecioTodo(lista) +"\n");
+        System.out.println("Total productos: "+ lista.size());
+        System.out.println("\nPrecio de todos los productos: "+ getPrecioTodo(lista) +"\n");
     }
+
 
     private double getPrecioTodo(List<Electrodomestico> lista){
         return lista.stream()
